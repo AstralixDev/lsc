@@ -14,7 +14,7 @@
             <ul class="nav-links">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="Learn">¿Por qué aprender?</a></li>
-                <li><a href="#curso">Señas básicas</a></li>
+                <li><a href="LSC">Señas básicas</a></li>
             </ul>
             <button id="menu-btn" class="menu-btn">☰</button>
         </nav>
@@ -23,7 +23,10 @@
     <section id="inicio" class="hero">
         <h2>Comunícate sin barreras</h2>
         <p>Únete a nuestra campaña escolar para promover la inclusión aprendiendo Lengua de Señas Chilena.</p>
-        <button class="btn" href="Learn">Quiero aprender</button>
+       <button class="btn" onclick="window.location.href='Learn'">
+    Quiero aprender
+</button>
+
     </section>
 
     <section id="info" class="info">
@@ -50,21 +53,18 @@
 
         <div class="señas-grid">
 
-            <!-- Imagen 1 -->
             <div class="seña-card">
                 <img src="https://i.imgur.com/3Y1kHfY.png" alt="Hola LSC">
                 <h3>👋 Hola</h3>
                 <p>Una de las primeras señas y la más usada para saludar.</p>
             </div>
 
-            <!-- Imagen 2 -->
             <div class="seña-card">
                 <img src="https://i.imgur.com/FXbOaKJ.png" alt="Gracias LSC">
                 <h3>🙏 Gracias</h3>
                 <p>Seña indispensable para expresar gratitud en LSC.</p>
             </div>
 
-            <!-- Imagen 3 -->
             <div class="seña-card">
                 <img src="https://i.imgur.com/EG5MkWF.png" alt="Te quiero LSC">
                 <h3>❤️ Te quiero</h3>
@@ -73,9 +73,9 @@
 
         </div>
 
-        <button class="btn" onclick="alert('¡Gracias por apoyar la inclusión!')">
-            Unirme a la campaña
-        </button>
+       <button class="btn" onclick="window.location.href='Join'">
+    Unirme a la Campaña
+</button>
     </section>
 
     <footer>

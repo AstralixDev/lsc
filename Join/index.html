@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSC</title>
+    <link rel="stylesheet" href="../CSS/join.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <h1 class="logo">🤟 Aprende LSC!</h1>
+            <ul class="nav-links">
+                <li><a href="../">Volver al Inicio</a></li>
+            </ul>
+            <button id="menu-btn" class="menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>¡Únete a la campaña!</h2>
+        <p>Completa este breve formulario y conviértete en parte de la iniciativa escolar para promover la Lengua de Señas Chilena.</p>
+    </section>
+
+    <section id="formulario" class="form-section">
+        <h2>Formulario de inscripción</h2>
+
+        <form class="form">
+
+            <div class="input-group">
+                <label>Nombre completo</label>
+                <input type="text" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="input-group">
+                <label>Edad</label>
+                <input type="number" min="5" max="120" placeholder="Tu edad" required>
+            </div>
+
+            <div class="input-group">
+                <label>Curso o nivel</label>
+                <input type="text" placeholder="Ej: 2° Medio A" required>
+            </div>
+
+            <div class="input-group">
+                <label>¿Por qué quieres unirte?</label>
+                <textarea placeholder="Escribe tu motivo..." required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label>¿Qué esperas aprender?</label>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Señas básicas</option>
+                    <option>El alfabeto dactilológico</option>
+                    <option>Conversación básica</option>
+                    <option>Comunicación completa en LSC</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Enviar inscripción</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Nacho Merino – LSC</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+
+        document.querySelector("form").addEventListener("submit", e => {
+            e.preventDefault();
+            alert("¡Gracias por unirte a la campaña! Pronto te contactaremos 😊");
+        });
+    </script>
+
+</body>
+</html>

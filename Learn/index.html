@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn LSC</title>
+    <link rel="stylesheet" href="../CSS/learn.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <h1 class="logo">🤟 Aprende LSC!</h1>
+            <ul class="nav-links">
+                <li><a href="../">Volver al inicio</a></li>
+            </ul>
+            <button id="menu-btn" class="menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Guía para aprender LSC</h2>
+        <p>Una explicación clara y visual para comenzar a comunicarte con señas.</p>
+    </section>
+
+    <section id="basicos" class="conceptos">
+        <h2>Conceptos básicos antes de comenzar</h2>
+
+        <div class="grid">
+            <div class="concept-card">
+                <h3>🖐 Alfabeto dactilológico</h3>
+                <p>Es la representación de cada letra con la mano. Te permite deletrear nombres o palabras nuevas.</p>
+            </div>
+            <div class="concept-card">
+                <h3>👁 Expresión facial</h3>
+                <p>En LSC la cara es parte de la seña: emociones, preguntas y énfasis dependen de la expresión.</p>
+            </div>
+            <div class="concept-card">
+                <h3>📍 Espacio de señas</h3>
+                <p>El “espacio” frente a tu cuerpo donde se realizan las señas. Debe mantenerse claro y visible.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="guia" class="guia">
+        <h2>Guía práctica paso a paso</h2>
+        <p class="intro">Aquí tienes algunas señas explicadas paso a paso según el estilo básico de LSC.</p>
+
+        <div class="guia-grid">
+
+            <div class="paso">
+                <img src="https://i.imgur.com/k01fN3s.png" alt="Seña Hola">
+                <h3>👋 Hola</h3>
+                <p>Mueve la mano abierta hacia los lados, como un pequeño saludo amistoso.</p>
+            </div>
+
+            <div class="paso">
+                <img src="https://i.imgur.com/zpFH3IB.png" alt="Seña Gracias">
+                <h3>🙏 Gracias</h3>
+                <p>Lleva la mano desde la barbilla hacia adelante en una línea suave.</p>
+            </div>
+
+            <div class="paso">
+                <img src="https://i.imgur.com/8VPr8BX.png" alt="Seña Lo siento">
+                <h3>💜 Lo siento</h3>
+                <p>Forma un puño sobre el pecho y realiza un movimiento circular.</p>
+            </div>
+
+            <div class="paso">
+                <img src="https://i.imgur.com/AY3SUSq.png" alt="Seña ¿Cómo estás?">
+                <h3>🤔 ¿Cómo estás?</h3>
+                <p>Haz un pequeño giro de muñeca y luego señala suavemente a la persona.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Guía de Aprendizaje – Lengua de Señas Chilena (LSC)</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

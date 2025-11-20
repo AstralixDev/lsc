@@ -1,0 +1,187 @@
+/* ---------- General ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: #f1f1f1;
+}
+
+/* ---------- Navegación ---------- */
+header {
+    width: 100%;
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #222;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    color: #bb86fc;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #bb86fc;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(#121212, #1a1a1a);
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    color: #bb86fc;
+}
+
+.hero p {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.btn {
+    background: #bb86fc;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+/* ---------- Info cards ---------- */
+.info {
+    padding: 60px 25px;
+    text-align: center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #bb86fc;
+}
+
+/* ---------- Señas ---------- */
+.curso {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.señas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.seña-card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+    transition: 0.3s;
+}
+
+.seña-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.seña-card:hover {
+    transform: translateY(-6px);
+    border-color: #bb86fc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 50px;
+    color: #777;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        padding: 20px;
+        width: 200px;
+        border-left: 1px solid #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
